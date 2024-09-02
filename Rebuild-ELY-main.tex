@@ -1,0 +1,294 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Evolutesix Book
+% LaTeX Template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%        PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+% Consider adding in the sidecap package in place of wrapfigure.
+% http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/sidecap/sidecap.pdf
+% https://ctan.org/pkg/sidecap?lang=en
+
+
+
+
+\documentclass[
+        11pt, % Default font size
+        openany, % Chapters start on the next available empty page, not odd ones as is the default
+        graham, % Book style being created, this must be specified and the options are: graham or robert
+]{evolutesixbook1}
+
+
+
+% All bibliographies to be used in the book
+\addbibresource{all-vol-bibliography.bib}
+
+
+
+%----------------------------------------------------------------------------------------
+%        HYPHENATION
+%----------------------------------------------------------------------------------------
+
+
+\hyphenation{self-or-gan-is-ing self-or-gan-is-a-tion self-gov-er-ning self-gov-er-nance Bas-sech-es a-part-heid quan-tum man-che-ster non-equi-lib-ri-um equi-lib-ri-um sham-bha-la tyn-dale ham-mered self-de-vel-op-ment every-thing chris-ten-sen what-ev-er some-one when-ev-er wher-ev-er par-ti-cles gov-er-nance }
+
+
+%----------------------------------------------------------------------------------------
+
+\makeindex 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%        FRONT COVER
+%----------------------------------------------------------------------------------------
+
+
+\includepdf{Rebuild-Ebook-Front-vp-3} % Include an image as the full page background, must be the dimensions of the paper to fill the page entirely. Can be a jpg etc., not only pdf.
+
+
+%\typeout{The text height is \the\textheight}
+%\typeout{The headsep is \the\headsep}
+%\typeout{The footskip is \the\footskip}
+
+%\cleardoublepage
+
+\input{0-1-testimonials}
+
+%----------------------------------------------------------------------------------------
+%        INSIDE COVER
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{titlepage}
+        \centering
+		 \vspace*{1.0cm}
+%        {\sffamily \scshape\Huge Picasso and Einstein: \par\medskip the Economy, Leadership \par\bigskip  and You} \par
+		{\sffamily \scshape\Huge Rebuild: \par\medskip The Economy, Leadership, \par\bigskip  and You} \par
+         \vspace{0.5cm}
+        {\large\bfseries A toolkit for builders of a better world. \par}
+%        {\large\bfseries How to transform yourself and your business into a powerful solution to today's global crises. \par}
+        \vspace{1.0cm}
+        {\Large\itshape Graham Boyd and Jack Reardon\par}
+        {\large October 2020 \par}                
+        \begin{chapterquotation}
+                \vspace{1cm} 
+                        Others have seen what is and asked why. I have seen what could be and asked why not.
+                
+                \raggedleft\textemdash Pablo Picasso
+        \end{chapterquotation}
+
+\bigskip
+{
+
+}
+     
+        \vfill
+        \includegraphics[width=0.35\textwidth]{./Images/logo_evolutesix-05} \hfill
+
+        Join our monthly webinars and mailing list at \url{bit.ly/Rebuild-ELY}
+
+        Contact us at \url{evolutesix.com} for our venture builder, consulting, and public programmes.
+\end{titlepage}
+
+
+%----------------------------------------------------------------------------------------
+%        BOOK INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+\bookinformationpage{ \small
+Published by Evolutesix Books, London, UK.
+
+
+
+\bigskip
+
+
+	Hardcover ISBN: 978-1-913629-02-1 \\
+	Paperback ISBN: 978-1-913629-01-4 \\
+	e-book ISBN: 978-1-913629-00-7 
+        
+    \bigskip
+        
+    Copyright \textcopyright~Graham Boyd and Jack Reardon, October 2020
+        
+    \bigskip
+        
+The rights of Graham Boyd and Jack Reardon to be identified as the authors of this work has been asserted by them in accordance with the Copyright, Designs and Patents Act 1988.
+        
+        \bigskip
+        
+   {\scshape  
+	\small Release 1.1.1 (non-ergodic added, Ch. 6)\\  
+ \par}
+
+
+
+        \bigskip
+        
+A CIP catalogue record will be available from the British Library.
+
+
+\bigskip
+
+
+Typeset using \LaTeX. 
+
+Cover design and illustrations by Nikyta Guleria\\
+Editing by Anna Kierstan
+
+\bigskip
+
+
+This book is sold subject to the condition that it shall not, by way of trade or otherwise, be lent, re-sold, hired out, or otherwise circulated without the publisher's prior consent in any form of binding or cover other than that in which it is published and without a similar condition including this condition being imposed on the subsequent purchaser.
+
+This book is licenced under Creative Commons CC BY-NC-ND, excluding any elements from other copyrighted works. Consult this licence for details \url{https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode}. You may make copies of this book for non-commercial purposes, in unadapted form, with full attribution. No remixed, transformed, or derivative works may be distributed. This book is provided without warranty, neither explicit nor implicit.
+
+\bigskip
+
+
+This book is published in at least one electronic form under the standard Evolutesix Books pricing model of ``donate what it is worth to you'' to ensure the widest possible readership and usefulness. Donate via \url{graham-boyd.biz}
+
+\hfill
+\begin{center}
+\includegraphics[width=0.35\textwidth]{./Images/by-nc-nd}
+\end{center}
+
+
+}
+%----------------------------------------------------------------------------------------
+%        DEDICATION
+%----------------------------------------------------------------------------------------
+
+
+\dedicationpage{To all those brave souls\\ who have, over the past decades,\\ selflessly invested their \\ time, effort and money\\ in rising to our challenges\\ long before they became \\ the emergencies we now face.}
+
+
+%----------------------------------------------------------------------------------------
+%        FRONT MATTER
+%----------------------------------------------------------------------------------------
+
+
+\frontmatter
+
+
+\tableofcontents
+
+
+\setcounter{tocdepth}{1} % Ensure figures and tables show regardless of book style (a tocdepth of 0 hides them)
+
+
+\listoftables
+
+
+\listoffigures
+
+
+\input{./0-preface-0.5} 
+\input{./0-3-CoverArt-Meaning}
+
+%----------------------------------------------------------------------------------------
+%        MAIN MATTER
+%----------------------------------------------------------------------------------------
+
+
+\mainmatter
+%  "
+
+%\partplain{Einstein and Picasso}
+\partdescription{Art and Physics}{In which we introduce the foundations of this book: your experienced reality is a consequence of how you look at the world, i.e., the lenses you look through. Cubism, relativity and quantum mechanics give us new lenses on business and economics.}
+\label{part:intro}
+\input{./1-emergence-theme-0.5}
+\input{./2-Emergence-Einstein-Picasso-0.5}
+
+
+
+%\partplain{Economy}
+\partdescription{Economy}{These chapters give an overview of how the economy as it is has emerged, and propose ways of reinventing the economy, and creating the one that can rebuild our capacity to thrive: the Economy of the Free. Drawing on apartheid as a metaphor you'll see why our current structuring of companies cannot deliver the economy our society needs, how the FairShares Commons addresses that issue, and how a new approach to economics can address the issues of neoclassical economics. \newline\newline If you are an investor or a founder, especially if you are expressing your values and beliefs around impact, sutainability, circularity, or regeneration, you will see how to protect your companies continuing to express your intent long after later investors have come in, and even after you are no longer involved.}
+\label{part:economy}
+\input{./3-how-do-we-know-our-economy-0.5}
+\input{./4-all-about-ownership-0.5}
+\input{./5-how-do-I-change-my-economy-0.5}
+\input{./6-general-theory-economies-0.5}
+
+
+\partdescription{You}{We humans are the alpha and omega of society, its economy, and our organisations. These chapters introduce you to how your meaning-making stories create your self-identity, and the unique reality you experience. They are the lenses you use to look at everything through. Your fluidity in the 28 thought forms of transformational thinking determine your capacity to grasp a nebulous, VUCA world, and what you can do to harness tension in your life to become who you can be, and achieve what you want to achieve,  in all arenas of your life, by growing your identity, and bringing your unique reality closer to actuality. All this happens on the foundations, and within the boundaries, of your fixed nature. And it is all nebulous, unknowable.}
+%\partplain{You}
+\label{exit}
+\label{part:you}
+\input{./7-how-do-I-know-myself-0.5}
+\input{./8-meaning-making-0.5}
+\input{./9-sense-making-0.5}
+\input{./10-nature-0.5}
+\input{./11-integration-0.5}
+
+
+
+\partdescription{Organisations}{Let's look at the organisation as a living, meaning-making being, just like you are, except that each cell of an organisation is a human being. It depends on humans to act as its eyes, ears, and mouth. Using this lens, you can see what ought to change, across all aspects; from legal incorporation as a free company, e.g. using  the FairShares Commons, through having tasks and roles structured using dynamic governance, to developmental inter-personal and intra-personal interactions.}
+%\partplain{Organisations}
+ \label{part:organisations}
+\input{./12-who-is-your-organisation-0.5}
+\input{./13-human-0.5}
+\input{./14-tasks-0.5}
+\input{./15-incorporation-0.5}
+\input{./16-creating-your-FSC}
+\input{./16-ecosystem-0.5}
+
+
+
+
+\partdescription{Turning to Action}{We're almost at the end of the book; here's the final transfusion of hope, energy, and motivation to act; along with greater clarity on how to act to make the best possible sustainable difference rebuilding our world into a regenerative one, where all life can thrive. \newline\newline By now, whatever your roles in society and the economy; whether investor, founder, staff, family, friend, citizen, customer, supplier, etc., by now you have seen what you could do to construct the conditions you need to fully express who you are, your beliefs and values through your work; and to do at work every day what gives you meaning and energy. \newline\newline From insight into action.}
+%\partplain{Turning to Action}
+ \label{part:action}  
+\input{./17-conclusion-0.5}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%        BACK MATTER
+%----------------------------------------------------------------------------------------
+
+
+\backmatter
+
+
+\input{./acknowledgements-0.5}
+%\input{./About}
+\partdescription{Appendix}{}
+
+
+
+\input{./18-appendix-deeper-general-theory-economies-0.5}
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography % Output the bibliography
+
+\addcontentsline{toc}{chapter}{Glossary}
+\printglossaries  % Output the glossaries
+
+\addcontentsline{toc}{chapter}{Index}
+\printindex  % Output the Index after the Bibliography
+
+%----------------------------------------------------------------------------------------
+%        BACK COVER
+%----------------------------------------------------------------------------------------
+
+
+%\cleardoublepage\thispagestyle{empty}~\newpage % Ensure that the back cover is on an even (left side) page
+
+
+%\includepdf{cover} % Include an image as the full page background, must be the dimensions of the paper to fill the page entirely
+
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
